@@ -621,7 +621,7 @@ class MFFileAccessArray(MFFileAccess):
                     fd.name,
                     self._data_dimensions.structure.name,
                     data_size,
-                    current_size,
+                    len(data_raw),
                 )
             )
             type_, value_, traceback_ = sys.exc_info()

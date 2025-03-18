@@ -6,15 +6,25 @@
 #       extension: .py
 #       format_name: light
 #       format_version: '1.5'
-#       jupytext_version: 1.14.5
+#       jupytext_version: 1.16.1
 #   kernelspec:
 #     display_name: Python 3 (ipykernel)
 #     language: python
 #     name: python3
+#   language_info:
+#     codemirror_mode:
+#       name: ipython
+#       version: 3
+#     file_extension: .py
+#     mimetype: text/x-python
+#     name: python
+#     nbconvert_exporter: python
+#     pygments_lexer: ipython3
+#     version: 3.11.8
 #   metadata:
-#     section: viz
 #     authors:
-#       - name: Christian Langevin
+#     - name: Christian Langevin
+#     section: viz
 # ---
 
 # + [markdown] pycharm={"name": "#%% md\n"}
@@ -518,16 +528,25 @@ linecollection = mapview.plot_grid(alpha=0.1)
 # __Note:__ The supplied shapes must have intersecting geographic coordinates as the `PlotMapView` object in order for it to overlay correctly on the plot.
 #
 # `plot_shapes()` supports many GIS based input types and they are listed below:
-#    + list of shapefile.Shape objects
-#    + shapefile.Shapes object
-#    + list of flopy.utils.geometry objects
-#    + flopy.utils.geometry.Collection object
-#    + list of geojson geometry objects
-#    + list of geojson.Feature objects
-#    + geojson.GeometryCollection object
-#    + geojson.FeatureCollection object
-#    + list of shapely geometry objects
-#    + shapely.GeometryCollection object
+# + list of shapefile.Shape objects
+
+# + shapefile.Shapes object
+
+# + list of flopy.utils.geometry objects
+
+# + flopy.utils.geometry.Collection object
+
+# + list of geojson geometry objects
+
+# + list of geojson.Feature objects
+
+# + geojson.GeometryCollection object
+
+# + geojson.FeatureCollection object
+
+# + list of shapely geometry objects
+
+# + shapely.GeometryCollection object
 #
 # Here is a basic example of how to use the method:
 
@@ -1055,4 +1074,3 @@ try:
     tempdir.cleanup()
 except:
     pass
-# -
